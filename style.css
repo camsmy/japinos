@@ -799,15 +799,15 @@ body {
     max-width: 100%;
     position: absolute;
     margin-top: -50px;
-    z-index: 0;
+    z-index: 5;
 }
 
 #contact h1 {
     text-align: center;
-    font-size: 2.5vw;
     position: relative;
     font-family: title-font;
     line-height: 1;
+    z-index: 5;
 }
 
 #contact h3 {
@@ -824,6 +824,8 @@ body {
     width: 100%;
     height: auto;
     z-index: 1;
+    display: absolute;
+    background-image: url(img/contact-bg.jpg);
 }
 
 #contact h2 {
@@ -848,7 +850,22 @@ input[type="text"].messages {
     font-size: 14px;
     transition: all 0.5s ease;
 }
+#contact .flex-column h1{
+    font-size: 4vw;
+}
 
+#bg-contact1{
+    transform: rotate(270deg);
+    display: relative;
+    float:left;
+    height: 20px;
+}
+#bg-contact2{
+display: relative;
+width: 10vw;
+float: right;
+   bottom: 0;
+}
 /*Medium devices (tablets, 768px and up)*/
 @media only screen and (max-width: 768px) {
     #contact h1{
@@ -864,6 +881,9 @@ input[type="text"].messages {
         width: 65vw;
         font-size: 2.5vw;
     }
+    #contact{
+        background-image: none;
+    }
 }
 /* Smaller devices (portrait phones, 576px and up)*/
 @media only screen and (max-width: 360px) {
@@ -873,9 +893,6 @@ input[type="text"].messages {
     input[type="text"], input[type="email"] {
         width: 80vw !important;
         font-size: 4.5vw;
-    }
-    #contact h1{
-        font-size:7.5vw;
     }
 }
 /*--------------- END Contact Part ---------------*/
@@ -888,6 +905,7 @@ input[type="text"].messages {
     padding-bottom: 30px;
     overflow: hidden;
     background: #212121;
+    width: 100vw;
 }
 
 .instragram_area .single_instagram {
@@ -1376,8 +1394,11 @@ hr.style-eight:after {
     .face-back h2 {
         font-size: 2.5vw;
     }
+    #contact .flex-column h1{
+        font-size: 7vw;
 
-
+    }
+    
 }
 
 
@@ -1429,6 +1450,10 @@ hr.style-eight:after {
     #best-seller h1 {
         font-size: 7vw;
     }
+    #contact .flex-column h1{
+        font-size: 12vw;
+    }
+    
 }
 
 /* Smaller devices (portrait phones, 576px and up)*/
@@ -1441,13 +1466,17 @@ hr.style-eight:after {
     .menu-text p {
         font-size: 5vw !important;
     }
+    #contact .flex-column h1{
+        font-size: 15vw;
+
+    }
+    
 }
 
 
 
-
 /*------------ END MENU Part ---------------*/
-#home h1, #about h1,#locator h1, #contact h1{
+#home h1, #about h1,#locator h1{
     padding-top:50px;
 }
 /*------------- RESPONSIVE CHEATSHEET -----------*/
