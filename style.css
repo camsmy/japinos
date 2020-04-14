@@ -1,0 +1,1708 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans&display=swap');
+
+@font-face {
+    font-family: "Raleway ExtraBold";
+    src: url("Raleway-ExtraBold.eot?") format("eot"),
+        url("Raleway-ExtraBold.woff") format("woff"),
+        url("Raleway-ExtraBold.ttf") format("truetype"),
+        url("Raleway-ExtraBold.svg#Raleway-ExtraBold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url(fonts/NightinTokyo-Bold.ttf);
+    font-family: night-bold;
+}
+
+@font-face {
+    src: url(fonts/NightinTokyo.ttf);
+    font-family: night;
+}
+
+@font-face {
+    src: url(fonts/NightinTokyoShadow.ttf);
+    font-family: night-shadow;
+}
+
+@font-face {
+    src: url(fonts/NikkyouSans-B6aV.ttf);
+    font-family: nikkyou;
+}
+
+@font-face {
+    src: url(fonts/edosz.ttf);
+    font-family: title-font;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    background-color: black !important;
+    z-index: 100;
+    font-family: 'PT serif';
+    font-size: large;
+}
+
+.navbar .navbar-nav li>a {
+    color: red !important;
+}
+
+.navbar .navbar-nav li a.active {
+    color: #FF9C56 !important;
+}
+
+.navbar .navbar-nav li a {
+    font-size: 25px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #FF9C56 !important;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: #FF9C56 !important;
+}
+
+.navbar-nav {
+    font-family: 'Oswald';
+}
+
+/*carousel part START*/
+
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.carousel-caption {
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.carousel-item .carousel-caption h1 {
+    position: relative;
+    font-family: title-font;
+    font-size: 10vh;
+    text-transform: uppercase;
+}
+
+.carousel-item .carousel-caption img {
+    bottom: 150px;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.carousel-item .carousel-caption p {
+    font-family: 'Montserrat';
+    font-size: 5vh;
+    font-weight: normal;
+}
+
+.drk:after {
+    /*image overlay*/
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.6;
+}
+
+.carousel-item .carousel-caption #foodpanda {
+    width: 35vw;
+    transform: translate(-15%, 15%);
+}
+
+.myButton {
+    background-color: black;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: nikkyou;
+    font-size: 25px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.myButton:hover {
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (max-width: 992px) {
+    .carousel-item .carousel-caption h1 {
+        font-size: 8vh;
+    }
+
+    .carousel-item .carousel-caption img {
+        transform: translatex(-5%);
+        width: 80vw;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 5vh;
+    }
+
+    .carousel-item .carousel-caption #foodpanda {
+        width: 31vw;
+        transform: translate(-15%, 15%);
+    }
+
+    .foodpanda-text h1 {
+        font-size: medium;
+        margin-top: 100px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    .carousel-item .carousel-caption h1 {
+        font-size: 7vh;
+    }
+
+    .carousel-item .carousel-caption img {
+        transform: translatex(-5%);
+        width: 80vw;
+    }
+
+    .carousel-item .carousel-caption p {
+        margin-top: 15px;
+        font-size: 4vh;
+    }
+
+    .carousel-item .carousel-caption #foodpanda {
+        width: 50vw;
+        transform: translate(0%, 20%);
+    }
+
+    .foodpanda-text h1 {
+        margin-top: 50px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) {
+    .carousel-caption {
+        top: 50%;
+    }
+    .carousel-item .carousel-caption h1 {
+        font-size: 6vh;
+    }
+
+    .carousel-item .carousel-caption img {
+        transform: translatex(-5%);
+        width: 80vw;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 2.5vh;
+        margin-top: 15px;
+    }
+
+    .carousel-item .carousel-caption #foodpanda {
+        width: 50vh;
+        transform: translate(0%, 0%);
+    }
+
+    .foodpanda-text h1 {
+        margin-top: 10px;
+    }
+    #contact h1, #contact h3{
+        top: -55px;
+    }
+}
+
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    .carousel-caption {
+        top: 50%;
+    }
+    .carousel-item .carousel-caption h1 {
+        font-size: 5vh;
+    }
+
+    .carousel-item .carousel-caption img {
+        width: 80vw;
+        transform: translatex(-5%);
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 2vh;
+        margin-top: 15px;
+    }
+
+    .carousel-item .carousel-caption #foodpanda {
+        width: 60vw;
+        transform: translate(0%, 0%);
+    }
+
+    .myButton {
+        font-size: 20px;
+    }
+}
+
+/*carousel part END*/
+
+/*--------- START ABOUT SECTION --------------*/
+#about {
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    height: auto;
+    /*padding: 45px 70px;*/
+    z-index: 1;
+}
+
+#about h1 {
+    text-align: center;
+    font-family: title-font;
+    font-size: 4vw;
+}
+
+#about p {
+    max-width: 500px;
+    height: auto;
+    font-family: 'Montserrat';
+}
+
+.restaurant_img {
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+}
+.mobile_only{
+    display: none;
+}
+/* RESPONSIVE CHEATSHEET*/
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    #about h1 {
+        font-size: 12vw;
+    }
+    .our-team-desc p{
+        font-size: 4vw;
+    }
+    #about p{
+        font-size: 4vw;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) {
+    #about h1 {
+        font-size: 18vw;
+    }
+.mobile_only{
+    display: block;
+}
+}
+
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    #about h1 {
+        font-size: 15vw;
+    }
+}
+
+/*-----------------END ABOUT SECTION------------------*/
+
+/*---------------START MEET OUT TEAM------------------*/
+
+#our-team {
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat';
+}
+
+.our-team-h1 {
+    text-align: center;
+    font-family: night;
+    font-size: 3.5vw !important;
+}
+.our-team-desc{
+    max-width: 400px;
+    height: auto;
+}
+.our-team-img {
+    height: auto;
+    max-width: 250px;
+    width: 100%;
+}
+.our-team-desc p{
+    font-family: 'Montserrat';
+}
+.our-team-wrapper{
+    max-width: 500px;
+    height: auto;
+}
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*-----------------END ABOUT SECTION------------------*/
+
+
+/*--------------- START Best Seller Part ---------------*/
+#best-seller {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.best-seller-title h1 {
+    font-size: 4vw;
+}
+
+#best-seller h1 {
+    color: white;
+    text-align: center;
+    font-family: title-font;
+    font-size: 4vw;
+}
+
+.best-seller-img2,
+.best-seller-img1 {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.best-seller-item1 .order-1,
+.best-seller-item1 .order-2,
+.best-seller-item2 .order-1,
+.best-seller-item2 .order-2 {
+    color: white;
+    font-family: title-font;
+    font-size: 4vw;
+}
+
+.best-seller-desc {
+    color: white;
+    text-align: center;
+
+}
+
+.best-seller-desc h3 {
+    font-family: nikkyou;
+    color: #FF5757;
+}
+
+.best-seller-desc h2 {
+    font-family: 'Montserrat';
+    font-size: 1.6vw;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (max-width: 992px) {
+    .best-seller-title h1 {
+        font-size: 7vw;
+    }
+
+    .best-seller-item1 .order-1,
+    .best-seller-item1 .order-2,
+    .best-seller-item2 .order-1,
+    .best-seller-item2 .order-2 {
+        font-size: 5.5vw;
+    }
+
+    .best-seller-desc h3 {
+        font-size: 2vw;
+    }
+
+    .best-seller-desc h2 {
+        font-size: 2vw;
+    }
+
+    .best-seller-desc h2 {
+        font-family: 'Montserrat';
+        font-size: 1.6vw;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    #best-seller .best-seller-title h1  {
+        font-size: 12vw;
+    }
+
+    .best-seller-item1 .order-1,
+    .best-seller-item1 .order-2,
+    .best-seller-item2 .order-1,
+    .best-seller-item2 .order-2 {
+        font-size: 10vw;
+    }
+
+    .best-seller-desc h3 {
+        font-size: 6vw;
+    }
+
+    .best-seller-desc h2 {
+        font-size: 5vw;
+    }
+    .best-seller-desc p{
+        font-size: 4vw;
+        font-family: 'Montserrat';
+    }
+    .center-block {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) {
+    #best-seller .best-seller-title h1 {
+        font-size: 18vw;
+    }
+
+    .best-seller-item1 .order-1,
+    .best-seller-item1 .order-2,
+    .best-seller-item2 .order-1,
+    .best-seller-item2 .order-2 {
+        font-size: 10vw;
+    }
+    .best-seller-desc h3 {
+        font-size: 10vw;
+    }
+
+    .best-seller-desc p{
+        font-size: 6vw;
+        font-family: 'Montserrat';
+    }
+    .best-seller-desc h2 {
+        font-size: 8vw;
+    }
+}
+
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    #best-seller .best-seller-title h1{
+        font-size: 15vw;
+    }
+
+    .best-seller-desc h3 {
+        font-size: 7vw;
+    }
+
+    .best-seller-desc h2 {
+        font-size: 7vw;
+    }
+
+    .best-seller-desc h2 {
+        font-family: 'Montserrat';
+        font-size: 1.6vw;
+    }
+
+    .best-seller-desc h2 {
+        font-size: 8vw;
+    }
+}
+
+
+/*--------------- END Best Seller Part ---------------*/
+
+
+/*--------------- START Testimonial Part ---------------*/
+#testimonials {
+    color: white;
+}
+
+.testimonial-title h1 {
+    text-align: center;
+    font-size: 2.5vw;
+    position: relative;
+    font-family: title-font;
+    line-height: 2;
+}
+
+.testimonial-title h3 {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 50px;
+    font-family: 'Montserrat';
+}
+
+.testimonial-area {
+    padding: 10px 0;
+    position: relative;
+    background-image: url(img/resto1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 200px;
+}
+
+.testimonial-area:before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.single-testimonial {
+    color: #fff;
+    padding-left: 40px;
+    position: relative;
+    margin: 0 15px 15px;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    height: 130px;
+    left: 0;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    width: 130px;
+}
+
+.testimonial-text {
+    background: #FFFF4A;
+    padding: 40px 20px 40px 100px;
+    color: #262626;
+}
+
+.testimonial-img>img {
+    background: linear-gradient(to bottom, darkcyan, white);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.testimonial-text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: nikkyou;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+}
+
+.testimonial-text h4 span {
+    display: block;
+}
+
+.testimonial-text p {
+    font-family: 'Montserrat';
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.single-testimonial:hover .testimonial-text {
+    background: #fff;
+    transition: 0.9s;
+}
+
+.testimonial-area div.owl-nav {
+    color: #FFFF4A;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+    z-index: 20;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+}
+
+.owl-prev {
+    left: -20px;
+    top: 100px;
+}
+
+.owl-next {
+    right: -20px;
+    top: 100px;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (max-width: 992px) {
+    .testimonial-title h1 {
+        font-size: 3vw;
+    }
+
+    .testimonial-title h3 {
+        font-size: 2vw;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    .testimonial-title h1 {
+        font-size: 4vw;
+    }
+
+    .testimonial-title h3 {
+        font-size: 2.5vw;
+    }
+
+    .testimonial-area {
+        padding: 15px 0;
+    }
+
+    .single-testimonial {
+        padding-left: 0;
+        padding-top: 75px;
+    }
+
+    .testimonial-img {
+        left: 50%;
+        margin-left: -75px;
+        top: 75px;
+    }
+
+    .testimonial-text {
+        padding: 80px 25px 25px;
+    }
+
+    .testimonial-text h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-text p {
+        font-size: 16px;
+    }
+
+    .owl-prev {
+        left: -15px;
+        top: 150px;
+    }
+
+    .owl-next {
+        right: -15px;
+        top: 150px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) {
+    .testimonial-title h1 {
+        font-size: 4vw;
+    }
+
+    .testimonial-title h3 {
+        font-size: 3.5vw;
+    }
+
+}
+
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    .testimonial-title h1 {
+        font-size: 7vw;
+    }
+
+    .testimonial-title h3 {
+        font-size: 5vw;
+    }
+}
+
+/*--------------- END Testimonial Part ---------------*/
+
+/*--------------- START Location Part ---------------*/
+
+#locator {
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#locator h1 {
+    text-align: center;
+    font-size: 2.5vw;
+    position: relative;
+    font-family: title-font;
+    line-height: 2;
+}
+
+.info {
+    background-color: #FF5757;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
+    padding: 20%;
+}
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    #locator h1{
+        font-size:5.5vw;
+    }
+    .map{
+        width:90vw !important;
+    }
+    .info{
+        width:90vw;
+    }
+}
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    #locator .location-title h1 {
+        font-size: 10vw;
+    }
+    .testimonial-title h3 {
+        font-size: 5vw;
+    }
+
+}
+/*--------------- END Location Part ---------------*/
+
+/*--------------- Start Contact Part ---------------*/
+.invertedtri {
+    max-width: 100%;
+    position: absolute;
+    margin-top: -50px;
+    z-index: 0;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 2.5vw;
+    position: relative;
+    font-family: title-font;
+    line-height: 1;
+}
+
+#contact h3 {
+    text-align: center;
+    font-size: 1.5vw;
+    position: relative;
+    font-family: Montserrat;
+    line-height: 1;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#contact h2 {
+    font-size: 1.5vw;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 40vw;
+    font-size: 1.5vw;
+}
+
+input[type="text"].messages {
+    height: 50vh;
+}
+
+#error_message {
+    margin-bottom: 25px;
+    padding: 0px;
+    background: red;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+    #contact h1{
+        font-size:5.5vw;
+    }
+    .invertedtri{
+        height:220px;
+    }
+    #contact h2{
+        font-size:3.5vw;
+    }
+    input[type="text"], input[type="email"] {
+        width: 65vw;
+        font-size: 2.5vw;
+    }
+}
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    .invertedtri{
+        height:20vh !important;
+    }
+    input[type="text"], input[type="email"] {
+        width: 80vw !important;
+        font-size: 4.5vw;
+    }
+    #contact h1{
+        font-size:7.5vw;
+    }
+}
+/*--------------- END Contact Part ---------------*/
+
+
+
+.instragram_area {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    background: #212121;
+}
+
+.instragram_area .single_instagram {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instragram_area .single_instagram img {
+    width: 100%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.instragram_area .single_instagram .ovrelay {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+    background: rgba(26, 13, 1, 0.3);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    right: 15px;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.instragram_area .single_instagram .ovrelay a {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.instragram_area .single_instagram:hover .ovrelay {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.instragram_area .single_instagram:hover img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 767px) {
+    .instragram_area .single_instagram {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .instragram_area .single_instagram {
+        width: 100%;
+    }
+}
+
+/*--------------- START Footer Part --------------*/
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer div p {
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+footer hr {
+    border-top: 1px solid white;
+}
+
+.social [class*="fa fa-"] {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*--------------- End Footer Part ----------------*/
+
+
+
+
+
+/*--------------- START MENU Part ---------------*/
+.face-back p,
+.face-front p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#container-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding-top: 80px;
+}
+
+#container-menu,
+.book-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-content {
+    width: 65%;
+    min-width: 350px;
+    max-width: 800px;
+    height: 650px;
+    position: relative;
+    perspective: 1000px;
+    transition: 1s;
+}
+
+.face-front,
+.face-back {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.face-front h1,
+.face-back h1 {
+    font-family: title-font;
+    font-size: 2vw;
+}
+
+.face-front p,
+.face-back p,
+.face-front h5,
+.face-back h5 {
+    font-family: 'Montserrat';
+    font-size: 1vw;
+}
+
+.face-front {
+    box-shadow: inset 3px 0px 20px -7px black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.face-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(-1px) rotateY(180deg);
+    box-shadow: inset -3px 1px 20px -7px black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.face-front h3 {
+    color: white;
+    font-size: 1.8vw;
+}
+
+.face-front h2,
+.face-back h2 {
+    font-family: title-font;
+    color: black;
+    font-size: 1.6vw;
+}
+
+.myButton2 {
+    background-color: #FF9C56;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: nikkyou;
+    font-size: 19px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    margin-bottom: 100px;
+}
+
+.myButton2:hover {
+    background-color: grey;
+    text-decoration: none;
+    color: #FF9C56;
+}
+
+.myButton2:active {
+    position: relative;
+    top: 1px;
+}
+
+.book2 {
+    transition: opacity 0.4s 0.2s;
+}
+
+.page {
+    width: 30vw;
+    height: 44vw;
+    background-color: #111111;
+    float: left;
+    margin-bottom: 0.5em;
+    background: left top no-repeat;
+    background-size: cover;
+}
+
+.page:nth-child(even) {
+    clear: both;
+}
+
+.book2 {
+    perspective: 250vw;
+}
+
+.book2 .pages {
+    width: 60vw;
+    height: 38vw;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    /*box-shadow: 0 0 0 1px #e3dfd8;*/
+}
+
+.book2 .page {
+    float: none;
+    clear: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    height: 38vw;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f0f0f0;
+}
+
+.book2 .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.7s;
+    z-index: 2;
+}
+
+.book2 .page:nth-child(odd) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+.book2 .page:nth-child(odd):hover {
+    transform: rotateY(-15deg);
+}
+
+.book2 .page:nth-child(odd):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book2 .page:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.book2 .page:nth-child(even) {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transform-origin: 100% 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    border-color: black;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .12) 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+.book2 .page:nth-child(even):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book2 .page.grabbing {
+    transition: none;
+}
+
+.book2 .page.flipped:nth-child(odd) {
+    pointer-events: none;
+    transform: rotateY(-180deg);
+}
+
+.book2 .page.flipped:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book2 .page.flipped:nth-child(even) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+}
+
+.book2 .page.flipped:nth-child(even):hover {
+    transform: rotateY(15deg);
+}
+
+.book2 .page.flipped:nth-child(even):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book2 .page.flipped:nth-child(even):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.page:nth-child(odd) {
+    background-position: right top;
+}
+
+
+/*--------------------------------------*/
+#mobile-menu {
+    background-color: #000;
+    display: none;
+}
+
+#mobile-menu .text-center {
+    color: white;
+}
+#mobile-menu h1,#mobile-menu h2 {
+    font-family: title-font;
+}
+#mobile-menu h5{
+    font-family: montserrat;
+    margin-bottom: 50px;
+}
+
+.img-menu {
+    width: 90vw;
+    height: auto;
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double white;
+    text-align: center;
+    color: white;
+}
+hr.style-eight:after {
+    content: url(hr.png);
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: black;
+}
+
+
+
+/* @media para hacer el texto responsivo */
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (max-width: 1200px) {
+    p {
+        font-size: 20px;
+    }
+    .myButton2{
+        margin-bottom: 140px;
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+
+    .page {
+        width: 30vw;
+        height: 100vw;
+    }
+    
+    .book2 .pages {
+        width: 60vw;
+        height: 50vw;
+    }
+    
+    .book2 .page {
+        width: 30vw;
+        height: 50vw;
+    }
+
+    .face-front h1,
+    .face-back h1 {
+        font-family: title-font;
+        font-size: 3vw;
+    }
+    
+    .face-front p,
+    .face-back p,
+    .face-front h5,
+    .face-back h5 {
+        font-family: 'Montserrat';
+        font-size: 1.6vw;
+    }
+    
+    .face-front h2,
+    .face-back h2 {
+        font-size: 2.5vw;
+    }
+
+
+}
+/* @media para hacer el texto responsivo */
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (max-width: 900px) {
+    p {
+        font-size: 20px;
+    }
+    .myButton2{
+        margin-bottom: 140px;
+        font-size: 15px;
+        padding: 5px 20px;
+    }
+    
+    .book2 .pages {
+        width: 60vw;
+        height: 55vw;
+    }
+    
+    .book2 .page {
+        width: 30vw;
+        height:55vw;
+    }
+
+    .face-front h1,
+    .face-back h1 {
+        font-family: title-font;
+        font-size: 3vw;
+    }
+    
+    .face-front p,
+    .face-back p,
+    .face-front h5,
+    .face-back h5 {
+        font-family: 'Montserrat';
+        font-size: 1.6vw;
+    }
+    
+    .face-front h2,
+    .face-back h2 {
+        font-size: 2.5vw;
+    }
+
+
+}
+
+
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 750px) {
+    #container-menu {
+        display: none !important;
+    }
+    #mobile-menu p{
+        color: white;
+    }
+    #mobile-menu {
+        display: block !important;
+    }
+
+    .menu-text h5 {
+        font-size: 5vw !important;
+    }
+
+    .menu-text h1,
+    .menu-text h2 {
+        font-size: 7vw;
+    }
+
+    #locator h1 {
+        font-size: 7vw;
+    }
+
+    .gmap {
+        width: 85vw;
+    }
+    .invertedtri{
+        height: 35vh;
+    }
+    #contact h2 {
+        font-size: 6.5vw;
+    }
+    #contact h3{
+        font-size: 3.5vw;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 70vw;
+        font-size: 4.5vw;
+    }
+
+    #best-seller h1 {
+        font-size: 7vw;
+    }
+}
+
+/* Smaller devices (portrait phones, 576px and up)*/
+@media only screen and (max-width: 360px) {
+    .menu-text h1,
+    .menu-text h2 {
+        font-size: 8vw;
+    }
+
+    .menu-text p {
+        font-size: 5vw !important;
+    }
+}
+
+
+
+
+/*------------ END MENU Part ---------------*/
+#home h1, #about h1,#locator h1, #contact h1{
+    padding-top:50px;
+}
+/*------------- RESPONSIVE CHEATSHEET -----------*/
+
+/* RESPONSIVE CHEATSHEET
+ /*Large devices (desktops, 992px and up)
+ @media only screen and (max-width: 992px) { 
+
+ }
+
+/*Medium devices (tablets, 768px and up)
+@media only screen and (max-width: 768px) { 
+
+ }
+1
+/* Small devices (landscape phones, 576px and up)
+@media only screen and (max-width: 576px) { 
+
+
+ }
+
+/* Smaller devices (portrait phones, 576px and up)
+@media only screen and (max-width: 360px) { 
+
+ }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container svg {
+    display: block;
+}
+
+section {
+    position: relative;
+    padding: 10em 10%;
+    background: #2980b9;
+    color: #fff;
+    text-align: center;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+
+section p {
+    color: rgba(0, 0, 0, .3);
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.text:first-child {
+    text-align: right;
+}
+
+.text:nth-child(2) {
+    text-align: left;
+}
+
+.col-2 .column {
+    width: 49%;
+}
+
+.col-3 .column {
+    padding: 0 1%;
+    width: 33%;
+    text-align: center;
+}
+
+.col-3 .column p {
+    padding: 1.4em;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    font-size: 8em;
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+section.color h2 {
+    color: #fff;
+}
+
+.color {
+    background: #3498db;
+}
+
+
+/*** Individual section styles and separators ***/
+
+
+/* Common style for pseudo-elements */
+
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+
+/* Multiple Triangles */
+
+.ss-style-multitriangles::before,
+.ss-style-multitriangles::after {
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-multitriangles::before {
+    top: -25px;
+    background: inherit;
+    box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+.ss-style-multitriangles::after {
+    bottom: -25px;
+    z-index: 10;
+    background: inherit;
+    box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+
+/* Media Queries for the layout */
+
+@media screen and (max-width: 68em) {
+    section {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 54em) {
+    .column {
+        display: block;
+        width: 100% !important;
+    }
+
+    .text:first-child,
+    .text:nth-child(2) {
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
+
+    .col-2 .column:first-child .icon {
+        margin: 0 auto 50px;
+    }
+
+    .col-2 .column:nth-child(2) .icon {
+        margin: 50px auto 0;
+    }
+}
+
+
+/*demo css*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+    font-family: 'codropsicons';
+    src: url('../fonts/codropsicons/codropsicons.eot');
+    src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container>header,
+.codrops-top {
+    font-family: 'Lato', Arial, sans-serif;
+    color: #fff;
+    background: #3498db;
+}
+
+.container>header {
+    margin: 0 auto;
+    padding: 5.5em 2em 7em;
+    text-align: center;
+}
+
+.container>header h1 {
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+}
+
+.container>header span {
+    display: block;
+    font-size: 60%;
+    opacity: 0.7;
+    padding: 0 0 0.6em 0.1em;
+}
+
+
+
+.related {
+    background: #ecf0f1;
+    color: #777;
+    text-align: center;
+}
+
+.related a {
+    font-weight: 700;
+    color: #3498db;
+    opacity: 0.7;
+}
+
+.related a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 25em) {
+    .codrops-icon span {
+        display: none;
+    }
+}

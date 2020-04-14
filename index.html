@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Japinos</title>
+  <style>
+    .map-generator {
+      max-width: 100%;
+      max-height: 100%;
+      background: none;
+    }
+  </style>
+  <!--- CSS -->
+  <link href="style.css" rel="stylesheet"> <!-- main css -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"><!-- Oswald Font-->
+  <link rel="shortcut icon" type="image/x-icon" href="logo-tab.png"><!-- tab image -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700&display=swap" rel="stylesheet">
+
+  <!--PT Serif Font-->
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="jquery/owl.carousel.css"> <!-- Testimonial CSS -->
+  <!-- End of CSS -->
+  <!-- AOS Animation for On Scroll Effects-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- END -->
+
+  <!-- JAVASCRIPT -->
+  <script src="all.js" type="text/javascript"></script> <!-- main javascript -->
+  <!-- END OF JAVASCRIPT -->
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="Untitled-3.js?1582825527633"></script>
+  <!-- JQUERY -->
+  <script src="js/jquery.nav.js"></script>
+
+
+  <!-- END OF JQUERY -->
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive" onload="init();">
+  <!-- Navigation Bar-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo-landscape.png" width="190px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#home">HOME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#locator">LOCATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End of Navigation Bar-->
+
+  <!-- Carousel-->
+
+
+
+  <!-- START HOME SECTION -->
+  <div id="home">
+    <header>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item drk active" id="special" style="background-image: url(img/chickydon.jpg);">
+            <div class="carousel-caption">
+              <h1 class="welcome">Welcome to</h1>
+              <div class="animated zoomIn delay-1s"><img src="img/logo-carousel.png"></div>
+              <p class="animated rollIn delay-2s">Serving the best Filipino - Japanese<br>fusion cuisine in town</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(img/foodpanda.jpg);">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <img src="img/foodpanda-logo.png" id="foodpanda">
+                  </div>
+                  <div class="col foodpanda-text">
+                    <h1 class="animated fadeInRight delay-1s">We are now on foodpanda!</h1>
+                    <a href="https://www.foodpanda.ph/restaurant/r3jr/japinos-alabang" target="_blank"
+                      class="myButton animated rotateIn delay-2s">Order Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+  </div>
+  <!--END OF CAROUSEL-->
+  <!-- END HOME SECTION -->
+
+  <!-- START ABOUT SECTION -->
+  <div class="container-fluid py-5" id="about">
+    <div class="flex-column order-1">
+      <h1>Our Story</h1>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap order-2">
+      <div class="order-3 p-2"> <img class="restaurant_img" src="img/resto2.jpg"></div>
+      <div class="order-2 p-4 row align-self-center">
+        <p class="text-center about-desc">Japinos started off with a soft opening to see how the crowd reacted to our food and officially
+          opened on September 29, 2019, at Festival Mall Alabang.
+          We believe in serving fresh, tasty and afforadable Filipino favorites with a Japanese twist!</p>
+      </div>
+    </div>
+    <div class="mobile_only">
+      <br><br><br>
+    </div>
+    <div style="height: 200px; transform: rotate(5deg);" data-aos="fade-left" data-aos-delay="300" class="mx-5">
+      <img class="restaurant_img rounded float-left" src="img/about/03.jpg">
+    </div>
+    <div style="height: 200px; transform: rotate(-5deg)" class="mx-5" data-aos="fade-right" data-aos-delay="600">
+      <img class="restaurant_img rounded float-right" src="img/about/01.jpg">
+    </div>
+    <div class="mobile_only">
+      <br><br>
+    </div>
+    <div style="height: 500px; transform: rotate(-5deg)" class="mx-5" data-aos="fade-left" data-aos-delay="1000">
+      <img class="restaurant_img rounded float-left" src="img/about/04.jpg">
+    </div>
+  </div>
+  <!-- END ABOUT SECTION -->
+
+  <!--- START Meet our Team -->
+
+  <div class="container-fluid py-5" id="about">
+    <div class="flex-column">
+      <h1>Our Team</h1>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap m-3">
+      <div class="our-team-wrapper ml-2">
+      <div class="order-1 p-2"> 
+        <img class="our-team-img center-block" src="img/jenny-doe.jpg" data-aos="flip-left">
+      </div>
+      <div class="order-2 p-4 row align-self-center">
+        <div class="flex-column text-center our-team-desc">
+          <h1>Chef Angel</h1>
+          <p>The heart of Japinos and the head of our kitchen.
+            Having studied Culinary Arts at At-Sunrice GlobalChef Academy,
+            Chef Angel puts her skills to the kitchen.
+            She puts love and passion in to everything
+            that she makes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="our-team-wrapper mr-2">
+      <div class="order-3 p-2" data-aos="flip-left">
+        <img class="our-team-img center-block" src="img/john-doe.jpg">
+      </div>
+      <div class="order-4 p-4 row align-self-center">
+        <div class="flex-column text-center our-team-desc">
+          <h1>Chef Fonzy</h1>
+          <p>Our youngest chef in the crew. He's finishing 
+            his Diploma in Culinary Arts at At-Sunrice 
+            GlobalChef Academy, completing his internship for six months at Japinos.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!---END Meet our Team -->
+
+  <!-- START BEST SELLER SECTION -->
+  <div class="container-fluid py-5" id="best-seller">
+    <div class="flex-column best-seller-title">
+      <h1>Best Sellers</h1>
+    </div>
+    <div class="flex-column">
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="order-1 p-2">
+          <img class="best-seller-img1 center-block" src="img/chickadon-89.jpg">
+          <div class="d-flex best-seller-item1 justify-content-center flex-wrap">
+            <div class="order-1 p-2">Chikadon</div>
+            <div class="order-2 p-2">P89</div>
+          </div>
+          <div class="flex-column best-seller-desc text-center">
+            <p>
+              One of our bestsellers! A quarter leg chicken<br>put under intense
+              heat in a pressure cooker<br>before being pan-fried.
+            </p>
+            <h3>Recommended Sauce:</h3>
+            <h2>Garlic Mayo</h2>
+            <h2>Spicy Mayo</h2>
+          </div>
+        </div>
+        <div class="order-2 p-2">
+          <img class="best-seller-img2 center-block" src="img/tapalogdon-109.jpg">
+          <div class="d-flex best-seller-item2 justify-content-center flex-wrap">
+            <div class="order-1 p-2">Tapalogdon</div>
+            <div class="order-2 p-2">P109</div>
+          </div>
+          <div class="flex-column best-seller-desc text-center">
+            <p>
+              Our bestseller! It's still your favorite<br>
+              classic tapadon but topped with a poached egg.<br>
+              <br>
+            </p>
+            <h3>Recommended Sauce:</h3>
+            <h2>Garlic Mayo</h2>
+            <h2>Spicy Mayo</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END BEST SELLER SECTION -->
+
+  <!--- START Testimonials -->
+  <div id="testimonials">
+    <div class="testimonial-area">
+      <div class="container">
+        <div class="flex-column testimonial-title">
+          <h1>What people are saying about our restaurant?</h1>
+          <h3>We make sure that every customer is satisfied with our service</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel test-slides" id="testimonial-carousel">
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/testimonial1.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>Sai Sei</h4>
+                    <p class="text-justify">The owner was very nice and took the time to explain to us that this is not
+                      simply adding Japanese flavoring to Filipino dishes, but thoughtfully fusing two cuisines to bring
+                      about very interesting flavors. Love the egg topping, love the miso soup, love the whole dish!
+                      Will come back for more!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/testimonial2.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>Miguel Pasang</h4>
+                    <p class="text-justify">Masarap na at mura pa , I order shanghaidon yesterday and surprisingly
+                      kalasa ng shanghai nila ang one of the famous food chain here in our country with a side dish of
+                      pouch egg masarap dishes nila I already ate here for the fourth time all I can say is thumbs up
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/testimonial3.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>Nancy Martin</h4>
+                    <p class="text-justify">Love the twist of Filipino daing na bangus with the Japanese cooking and the
+                      sauce 👌👌
+                      Plus great customer service 👌👌👌</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/testimonial4.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>Menzi V. Orellana</h4>
+                    <p class="text-justify">If your looking for a brand new twist on local favorites, definitely the
+                      place for you... Great food at a very affordable price... Gotta love the free soup.. MISO soup
+                      with a Filipino twist...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--- END Testimonials -->
+
+  <!--- START Location -->
+  <div id="locator" class="container-fluid py-5">
+    <div class="flex-column location-title">
+      <h1>Location & Opening Hours</h1>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap">
+      <div class="info order-3 p-5">
+        <p>Ground Floor, Festival Mall<br>Corporate Ave, Alabang,<br>Metro Manila, Philippines<br>
+          Muntinlupa City 1780<br>
+          <p>Sun-Thurs:<br>11:30 AM - 10:00 PM<br>Fri-Sat:<br>11:30 AM - 11:00 PM</p>
+      </div>
+      <div class="order-2 p-3 row align-self-center">
+        <div class="map" style="overflow:hidden;max-width:100%;width:50vw;height:55vh;">
+          <div id="embedmap-display" style="height:100%; width:100%;max-width:100%;">
+            <iframe class="gmap" style="height:100%;width:100%;border:0;" frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=Japinos&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div>
+          <a class="googlemap-html" href="https://www.embed-map.com"
+            id="get-data-forembedmap">https://www.embed-map.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--- END Location -->
+
+
+  <div id="contact" class="py-5">
+    <div>
+      <img src="img/inverted-triangle.png" class="invertedtri">
+      <div class="flex-column" style="position:relative">
+        <h1>Contact Us</h1>
+        <h3><i class="fa fa-phone" aria-hidden="true"></i> 4658-4569</h3>
+      </div>
+    </div>
+
+
+
+    <!-- START Contact-->
+    <div class="container-fluid py-5">
+      <div class="d-flex justify-content-center flex-wrap">
+        <form style="margin-top:100px" class="gform" method="post" id="myform" name="form"
+          action="https://script.google.com/macros/s/AKfycbyxkWOfgdV5vYcWyKigLIFa0NAaLsBM5gNKGoO9h-fgln--Xw/exec"
+          data-email="from_email@example.com">
+          <div class="error_message"></div>
+          <div class="main_form" style="display: block;">
+            <h2>Name:</h2><input type="text" id="name" name="name" class="form-control"
+              placeholder="Enter your name" required><br>
+            <h2>Email:</h2><input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+              placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone
+              else.</small>
+            <br>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                <h2>Messages</h2>
+              </label>
+              <textarea class="form-control" id="message" name="message" rows="10" required></textarea>
+            </div>
+            <input class="btn btn-danger" type="submit" value="Send Email" style="width:100%">
+          </div>
+          <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+            </h2>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- END Contact-->
+
+
+  <!-- instragram_area_start -->
+  <div class="instragram_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="single_instagram">
+            <img src="img/1-ig.png" alt="">
+            <div class="ovrelay">
+              <a href="https://www.facebook.com/japinosfestival/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single_instagram">
+            <img src="img/2-ig.png" alt="">
+            <div class="ovrelay">
+              <a href="https://www.facebook.com/japinosfestival/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single_instagram">
+            <img src="img/3-ig.png" alt="">
+            <div class="ovrelay">
+              <a href="https://www.facebook.com/japinosfestival/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="single_instagram">
+            <img src="img/4-ig.png" alt="">
+            <div class="ovrelay">
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- instragram_area_end -->
+
+  <!-- START Footer-->
+  <footer class="page-footer font-small blue pt-4">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center justify-content-center col-md-5">
+      <img src="logo-tab.png" width="60px"><br>
+      <img src="img/logo-carousel.png" width="150px"><br>
+      <p>Japinos started off with a soft opening to see how the crowd reacted to our food and officially opened on
+        September 29, 2019, at Festival Mall Alabang. We believe in serving fresh, tasty and afforadable Filipino
+        favorites with a Japanese twist!</p>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="social text-center">
+      <a class="fa fa-facebook" title="" target="_blank"
+        href="https://www.facebook.com/japinosfestival/?epa=SEARCH_BOX"></a>
+      <a class="fa fa-instagram" title="" target="_blank" href="https://www.instagram.com/japinosfestival/"></a>
+    </div>
+    <!-- Copyright -->
+
+    <div class="footer-copyright text-center py-3">
+      <hr class="style-eight">
+      <p>Copyright ©2020 All rights reserved
+        | This website is made by Camille Monis and Dominic Narag</p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- END Footer-->
+
+  <!-- JS here -->
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+  <script src="js1/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js1/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js1/popper.min.js"></script>
+  <script src="js1/bootstrap.min.js"></script>
+  <script src="js1/owl.carousel.min.js"></script>
+  <script src="js1/isotope.pkgd.min.js"></script>
+  <script src="js1/ajax-form.js"></script>
+  <script src="js1/waypoints.min.js"></script>
+  <script src="js1/jquery.counterup.min.js"></script>
+  <script src="js1/imagesloaded.pkgd.min.js"></script>
+  <script src="js1/scrollIt.js"></script>
+  <script src="js1/jquery.scrollUp.min.js"></script>
+  <script src="js1/wow.min.js"></script>
+  <script src="js1/nice-select.min.js"></script>
+  <script src="js1/jquery.slicknav.min.js"></script>
+  <script src="js1/jquery.magnific-popup.min.js"></script>
+  <script src="js1/plugins.js"></script>
+  <!-- Bootstrap Codes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="jquery/owl.carousel.min.js"></script> <!-- Testimonial plug-in -->
+  <!-- End of Bootstrap-->
+  <script>
+    /* carousel code*/
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  </script>
+  <script>
+    /* nav bar code*/
+    $("a").click(function () {
+      $("a").css("color", "");
+      $(this).css("color", "#FF9C56");
+    });
+    $(".nav .nav-link").on("click", function () {
+      $(".nav").find(".active").removeClass("active");
+      $(this).addClass("active");
+    });
+    $('#navbar-nav').onePageNav({
+      currentClass: 'active',
+      changeHash: false,
+      scrollSpeed: 750,
+      scrollThreshold: 0.5,
+      filter: '',
+      easing: 'swing'
+    });
+  </script>
+  <script>
+    /* testimonial code*/
+    $('#testimonial-carousel').owlCarousel({
+      loop: true,
+      dots: false,
+      autoplay: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4OhBPLjdKVZ_pf0Vi8fSfMb2RtRrOhjk&callback=initMap">
+  </script>
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: 14.417517,
+        lng: 121.041021
+      };
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+
+
+  <!--ON SCROLL ANIMATION-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- END ON SCROLL ANIMATION-->
+</body>
+
+</html>
