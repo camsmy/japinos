@@ -979,9 +979,12 @@ float: right;
     transform: scale(1);
 }
 
-@media (max-width: 767px) {
+@media only screen and  (max-width: 767px){
     .instragram_area .single_instagram {
-        width: 100%;
+        width:200px; 
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
     }
 }
 
@@ -990,6 +993,7 @@ float: right;
         width: 100%;
     }
 }
+
 
 /*--------------- START Footer Part --------------*/
 footer {

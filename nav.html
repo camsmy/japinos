@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="jquery/owl.carousel.css"> <!-- Testimonial CSS -->
+    <script src="js/jquery.nav.js"></script>
+    <style>
+        #testimonials {
+    background-color: red;
+    color: white;
+}
+.testimonial-area{
+    padding: 180px 0;
+    position: relative;
+    background-image: url(img/restaurant.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.testimonial-area:before{
+    position: absolute;
+    content:'';
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.single-testimonial{
+    color:#fff;
+    padding-left:75px;
+    position: relative;
+    margin: 0 15px 15px;
+}
+.testimonial-img{
+    border-radius:50%;
+    height: 150px;
+    left:0;
+    margin-top: -75px;
+    position: absolute;
+    top:50%;
+    width:150px;
+}
+.testimonial-text{
+    background:#FFFF4A;
+    padding: 40px 20px 40px 100px;
+    color: #262626;
+}
+.testimonial-img > img{
+    background: linear-gradient(to bottom, darkcyan,white);
+    border-radius: 50%;
+    padding: 5px;
+}
+.testimonial-text h4{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.testimonial-text h4 span{
+    display: block;
+}
+.testimonial-text p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 25px;
+    font-size: 18px;
+}
+.single-testimonial:hover .testimonial-text{
+    background: #fff;
+    transition: 0.9s;
+}
+
+
+  .owl-carousel .owl-nav [class*='owl-'] {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1000;
+  }
+  .owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 45%;
+    color: #fff;
+  }
+  .owl-carousel .owl-prev {
+    left: 10px;
+  }
+  .owl-carousel .owl-next {
+    right: 10px;
+  }
+  
+
+    </style>
+</head>
+<body>
+     <!--- START Testimonials -->
+  <div id="testimonials">
+    <div class="testimonial-area">
+      <div class="container">
+        <div class="row">
+          <di class="col-md-12">
+            <div class="owl-carousel test-slides" id="testimonial-carousel">
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/jenny-doe.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>John Ambrosse Mcclarren <span>Lover boi</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae libero distinctio laudantium modi
+                      assumenda, cum omnis beatae perspiciatis, in nihil deleniti magni error ex architecto asperiores
+                      laborum! Dolores, similique voluptatibus.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-testimonial">
+                  <div class="testimonial-img">
+                    <img src="img/john-doe.jpg" alt="image does not load">
+                  </div>
+                  <div class="testimonial-text">
+                    <h4>Peter Kavisky<span>Mahal niya si LAra Jean</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae libero distinctio laudantium modi
+                      assumenda, cum omnis beatae perspiciatis, in nihil deleniti magni error ex architecto asperiores
+                      laborum! Dolores, similique voluptatibus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </di>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- END Testimonials -->
+
+
+   <!-- Bootstrap Codes -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="jquery/owl.carousel.min.js"></script> <!-- Testimonial plug-in -->
+   <!-- End of Bootstrap-->
+  <script> /* testimonial code*/
+   $('#testimonial-carousel').owlCarousel({
+     loop: true,
+     dots: false,
+     autoplay: true,
+     nav: true,
+     navText: ['<i class="fa fa-angle-left fa-5x"></i>','<i class="fa fa-angle-right fa-5x"></i>'],
+      responsive: {
+       0: {
+         items: 1
+       },
+       600: {
+         items: 1
+       },
+       1000: {
+         items: 2
+       }
+     }
+   })
+ </script>
+</body>
+</html>
